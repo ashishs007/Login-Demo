@@ -1,2 +1,2 @@
 include ':app'
-rootProject.name = "Login Module"
+rootProject.name = "Login Demo"
