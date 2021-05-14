@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="clickListener"
+            type="android.view.View.OnClickListener" />
+
+
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/_F6F6F6"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:elevation="@dimen/_4sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_13sdp"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:outlineSpotShadowColor="@color/_193f434a"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="7dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:layout_marginEnd="@dimen/_12sdp">
+
+
+                    <TextView
+                        android:id="@+id/textView"
+                        style="@style/TextViewHeadingStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_25sdp"
+                        android:gravity="center_horizontal"
+                        android:text="@string/verification"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        style="@style/TextViewStyle_555555"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_17sdp"
+                        android:gravity="center"
+                        android:text="@string/otp_has_been_sent_to_you_on_your_mobile_number_please_enter_below"
+                        app:layout_constraintEnd_toEndOf="@+id/textView"
+                        app:layout_constraintStart_toStartOf="@+id/textView"
+                        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/ivOtpLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_25sdp"
+                        android:orientation="horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/ivOtp1"
+                            style="@style/OTPEditTextStyle"
+                            android:layout_width="@dimen/_45sdp"
+                            android:layout_height="@dimen/_42sdp"
+                            android:background="@drawable/drawable_otp_box"
+                            android:gravity="center"
+                            android:inputType="number"
+                            android:maxLength="1"
+                            android:textCursorDrawable="@drawable/drawable_editext_cursor"
+                            app:layout_constraintEnd_toStartOf="@+id/ivOtp2"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/ivOtp2"
+                            style="@style/OTPEditTextStyle"
+                            android:layout_width="@dimen/_45sdp"
+                            android:layout_height="@dimen/_42sdp"
+                            android:layout_marginStart="@dimen/_13sdp"
+                            android:background="@drawable/drawable_otp_box"
+                            android:gravity="center"
+                            android:inputType="number"
+                            android:maxLength="1"
+                            android:textCursorDrawable="@drawable/drawable_editext_cursor"
+                            app:layout_constraintEnd_toStartOf="@+id/ivOtp3"
+                            app:layout_constraintStart_toEndOf="@+id/ivOtp1"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/ivOtp3"
+                            style="@style/OTPEditTextStyle"
+                            android:layout_width="@dimen/_45sdp"
+                            android:layout_height="@dimen/_42sdp"
+                            android:layout_marginStart="@dimen/_13sdp"
+                            android:background="@drawable/drawable_otp_box"
+                            android:gravity="center"
+                            android:inputType="number"
+                            android:maxLength="1"
+                            android:textCursorDrawable="@drawable/drawable_editext_cursor"
+                            app:layout_constraintEnd_toStartOf="@+id/ivOtp4"
+                            app:layout_constraintStart_toEndOf="@+id/ivOtp2"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/ivOtp4"
+                            style="@style/OTPEditTextStyle"
+                            android:layout_width="@dimen/_45sdp"
+                            android:layout_height="@dimen/_42sdp"
+                            android:layout_marginStart="@dimen/_13sdp"
+                            android:background="@drawable/drawable_otp_box"
+                            android:gravity="center"
+                            android:inputType="number"
+                            android:maxLength="1"
+                            android:textCursorDrawable="@drawable/drawable_editext_cursor"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/ivOtp3"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/bt_verify_otp"
+                        style="@style/ButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_25sdp"
+                        android:background="@drawable/drawable_button_bg"
+                        android:onClick="@{(view)-> clickListener.onClick(view)}"
+                        android:text="@string/verify_otp"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ivOtpLayout" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_17sdp"
+                        android:layout_marginBottom="@dimen/_25sdp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/bt_verify_otp"
+                        app:layout_constraintStart_toStartOf="@+id/bt_verify_otp"
+                        app:layout_constraintTop_toBottomOf="@+id/bt_verify_otp"
+                        app:layout_constraintVertical_bias="0.0">
+
+                        <TextView
+                            style="@style/TextViewStyle_555555"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/didn_t_get_otp" />
+
+                        <TextView
+                            android:id="@+id/tv_resend"
+                            style="@style/TextViewStyle_61b15a"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_3sdp"
+                            android:onClick="@{(view)-> clickListener.onClick(view)}"
+                            android:text="@string/resend" />
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_138sdp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_bg_1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <include
+            android:id="@+id/progress_layout"
+            layout="@layout/layout_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </FrameLayout>
+
+
+</layout>

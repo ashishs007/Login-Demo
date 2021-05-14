@@ -1,3 +1,60 @@
 <resources>
     <string name="app_name">Login Demo</string>
+
+    <string name="loading">Loading</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="select_image">Select image</string>
+    <string name="no_internet">No internet connection</string>
+    <string name="failed_to_connect" translatable="false">failed to connect</string>
+    <string name="unable_to_resolve_host" translatable="false">unable to resolve host</string>
+    <string name="sign_in">Sign in</string>
+    <string name="mobile_no">Mobile no.</string>
+    <string name="not_registered_yet">Not registered yet?</string>
+    <string name="register_now">Register now</string>
+    <string name="register">Register</string>
+    <string name="full_name">Full name</string>
+    <string name="email_address">Email address</string>
+    <string name="date_of_birth">Date of birth</string>
+    <string name="sign_up">Sign up</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="occupation">Occupation</string>
+    <string name="select_occupation">Select occupation</string>
+    <string name="verification">Verification</string>
+    <string name="otp_has_been_sent_to_you_on_your_mobile_number_please_enter_below">OTP has been sent to you on your mobile\nnumber please enter below</string>
+    <string name="verify_otp">Verify OTP</string>
+    <string name="didn_t_get_otp">Didn\'t get OTP?</string>
+    <string name="resend">Resend</string>
+
+    <string name="mobile_number">Mobile number</string>
+    <string name="please_enter_mobile_number">Please enter mobile number</string>
+    <string name="enter_valid_mobile_number">Please enter a valid mobile number</string>
+    <string name="enter_otp">Please enter OTP</string>
+    <string name="select_gender">Select gender</string>
+    <string name="preferred_app_language">Preferred app language</string>
+    <string name="gender">Gender</string>
+
+    <string name="please_enter_your_full_name">Please enter your full name</string>
+    <string name="please_enter_your_email_address">Please enter your email address</string>
+    <string name="please_enter_valid_email_address">Please enter a valid email address</string>
+    <string name="please_enter_your_dob">Please enter your date of birth</string>
+    <string name="please_select_your_occupation">Please select your occupation</string>
+    <string name="please_select_your_gender">Please select your gender</string>
+    <string name="please_accept_terms_of_service_and_privacy_policy">Please accept our terms of service &amp; privacy policy</string>
+    <string name="otp_resent_successfully">OTP resent successfully.</string>
+    <string name="i_accept_your_terms_of_service_privacy_policy">I accept your Terms of Service &amp; Privacy Policy</string>
+    <string name="login_demo">Login Demo</string>
+    <string name="welcome">Welcome</string>
+
+    <string-array name="occupation">
+        <item>Developer</item>
+        <item>Designer</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
 </resources>

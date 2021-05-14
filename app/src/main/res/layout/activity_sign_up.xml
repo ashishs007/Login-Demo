@@ -1,0 +1,265 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="item"
+            type="com.login.api.request.SignUpRequest" />
+
+        <variable
+            name="clickListener"
+            type="android.view.View.OnClickListener" />
+
+
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/_F6F6F6"
+            tools:context=".ui.act.SignUpActivity">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_138sdp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_bg_1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_12sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:layout_marginEnd="@dimen/_12sdp"
+                        android:layout_marginBottom="@dimen/_40sdp"
+                        android:outlineSpotShadowColor="@color/_193f434a"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="7dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_12sdp"
+                            android:layout_marginEnd="@dimen/_12sdp">
+
+
+                            <TextView
+                                android:id="@+id/textView"
+                                style="@style/TextViewHeadingStyle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_25sdp"
+                                android:gravity="center_horizontal"
+                                android:text="@string/register"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+
+                            <EditText
+                                android:id="@+id/et_full_name"
+                                style="@style/EditTextStyle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_17sdp"
+                                android:background="@drawable/drawable_edit_text_bg"
+                                android:hint="@string/full_name"
+                                android:inputType="textPersonName"
+                                android:text="@={item.fullName}"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+                            <EditText
+                                android:id="@+id/et_mobile"
+                                style="@style/EditTextStyle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_17sdp"
+                                android:background="@drawable/drawable_edit_text_bg"
+                                android:hint="@string/mobile_no"
+                                android:inputType="number"
+                                android:maxLength="10"
+                                android:text="@={item.mobile}"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/et_full_name" />
+
+                            <EditText
+                                android:id="@+id/et_date_of_birth"
+                                style="@style/EditTextStyle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_17sdp"
+                                android:background="@drawable/drawable_edit_text_bg"
+                                android:clickable="false"
+                                android:drawableEnd="@drawable/ic_calendar"
+                                android:focusable="false"
+                                android:hint="@string/date_of_birth"
+                                android:inputType="date"
+                                android:longClickable="false"
+                                android:onClick="@{(view)-> clickListener.onClick(view)}"
+                                android:text="@={item.dob}"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/et_mobile" />
+
+                            <EditText
+                                android:id="@+id/et_occupation"
+                                style="@style/EditTextStyle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_17sdp"
+                                android:background="@drawable/drawable_edit_text_bg"
+                                android:clickable="false"
+                                android:drawableEnd="@drawable/ic_arrow_down"
+                                android:focusable="false"
+                                android:hint="@string/occupation"
+                                android:inputType="text"
+                                android:longClickable="false"
+                                android:onClick="@{(view)-> clickListener.onClick(view)}"
+                                android:text="@{item.occupation}"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/et_date_of_birth" />
+
+                            <EditText
+                                android:id="@+id/et_email"
+                                style="@style/EditTextStyle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_17sdp"
+                                android:background="@drawable/drawable_edit_text_bg"
+                                android:hint="@string/email_address"
+                                android:inputType="textEmailAddress"
+                                android:text="@={item.email}"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/et_occupation" />
+
+                            <EditText
+                                android:id="@+id/et_gender"
+                                style="@style/EditTextStyle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_17sdp"
+                                android:background="@drawable/drawable_edit_text_bg"
+                                android:clickable="false"
+                                android:drawableEnd="@drawable/ic_arrow_down"
+                                android:focusable="false"
+                                android:hint="@string/select_gender"
+                                android:inputType="text"
+                                android:longClickable="false"
+                                android:onClick="@{(view)-> clickListener.onClick(view)}"
+                                android:text="@={item.gender}"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/et_email" />
+
+                            <androidx.appcompat.widget.AppCompatCheckBox
+                                android:id="@+id/appCompatCheckBox"
+                                style="@style/TextViewStyle_555555"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:button="@drawable/selector_check_box"
+                                android:paddingStart="@dimen/_5sdp"
+                                android:paddingEnd="@dimen/_5sdp"
+                                android:text="@string/i_accept_your_terms_of_service_privacy_policy"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/et_gender" />
+
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/bt_sign_up"
+                                style="@style/ButtonStyle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:background="@drawable/drawable_button_bg"
+                                android:onClick="@{(view)-> clickListener.onClick(view)}"
+                                android:text="@string/sign_up"
+                                android:textAllCaps="false"
+                                android:textColor="@color/white"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/appCompatCheckBox" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_17sdp"
+                                android:layout_marginBottom="@dimen/_25sdp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="@+id/bt_sign_up"
+                                app:layout_constraintStart_toStartOf="@+id/bt_sign_up"
+                                app:layout_constraintTop_toBottomOf="@+id/bt_sign_up">
+
+                                <TextView
+                                    style="@style/TextViewStyle_555555"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/already_have_an_account" />
+
+                                <TextView
+                                    android:id="@+id/tv_sign_in"
+                                    style="@style/TextViewStyle_61b15a"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/_3sdp"
+                                    android:onClick="@{(view)-> clickListener.onClick(view)}"
+                                    android:text="@string/sign_in" />
+                            </LinearLayout>
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </ScrollView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <include
+            android:id="@+id/progress_layout"
+            layout="@layout/layout_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </FrameLayout>
+
+
+</layout>

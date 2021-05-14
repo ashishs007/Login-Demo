@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/_555555</item>
+    </style>
+
+    <style name="ProgressBar">
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+
+
+    <style name="SplashTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorAccent</item>
+        <item name="android:windowLightStatusBar" tools:ignore="NewApi">true</item>
+        <item name="colorPrimaryDark">@color/colorAccent</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="EditTextStyle">
+        <item name="android:fontFamily">@font/sf_pro_display_regular</item>
+        <item name="android:padding">@dimen/_12sdp</item>
+        <item name="android:textSize">@dimen/_13ssp</item>
+        <item name="android:textColorHint">@color/_AAAAAA</item>
+    </style>
+
+    <style name="EditTextStyle1">
+        <item name="android:fontFamily">@font/sf_pro_display_regular</item>
+        <item name="android:padding">@dimen/_12sdp</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:textColorHint">@color/_AAAAAA</item>
+    </style>
+
+
+    <style name="ButtonStyle">
+        <item name="android:fontFamily">@font/sf_pro_display_semibold</item>
+        <item name="android:padding">@dimen/_12sdp</item>
+        <item name="android:textSize">@dimen/_13ssp</item>
+    </style>
+
+    <style name="TextViewHeadingStyle">
+        <item name="android:fontFamily">@font/sf_pro_display_bold</item>
+        <item name="android:textColor">@color/_555555</item>
+        <item name="android:textSize">@dimen/_20ssp</item>
+    </style>
+
+
+    <style name="TextViewHeadingStyle1">
+        <item name="android:fontFamily">@font/sf_pro_display_semibold</item>
+        <item name="android:textColor">@color/_555555</item>
+        <item name="android:textSize">@dimen/_17ssp</item>
+    </style>
+
+    <style name="TextViewHeadingStyle2">
+        <item name="android:fontFamily">@font/sf_pro_display_bold</item>
+        <item name="android:textColor">@color/_555555</item>
+        <item name="android:textSize">@dimen/_14ssp</item>
+    </style>
+
+    <style name="TextViewHeadingStyle3">
+        <item name="android:fontFamily">@font/sf_pro_display_semibold</item>
+        <item name="android:textColor">@color/_555555</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
+    </style>
+
+    <style name="TextViewHeadingStyle4">
+        <item name="android:fontFamily">@font/sf_pro_display_bold</item>
+        <item name="android:textColor">@color/_555555</item>
+        <item name="android:textSize">@dimen/_17ssp</item>
+    </style>
+
+    <style name="TextViewHeadingStyle5">
+        <item name="android:fontFamily">@font/sf_pro_display_regular</item>
+        <item name="android:textColor">@color/_555555</item>
+        <item name="android:textSize">@dimen/_17ssp</item>
+    </style>
+
+    <style name="TextViewHeadingStyle6">
+        <item name="android:fontFamily">@font/sf_pro_display_semibold</item>
+        <item name="android:textColor">@color/_555555</item>
+        <item name="android:textSize">@dimen/_13ssp</item>
+    </style>
+
+    <style name="TextViewStyle">
+        <item name="android:fontFamily">@font/sf_pro_display_medium</item>
+        <item name="android:textColor">@color/_555555</item>
+        <item name="android:textSize">@dimen/_14ssp</item>
+    </style>
+
+    <style name="TextViewStyle1">
+        <item name="android:fontFamily">@font/sf_pro_display_regular</item>
+        <item name="android:textColor">@color/_AAAAAA</item>
+        <item name="android:textSize">@dimen/_10sdp</item>
+    </style>
+
+    <style name="TextViewStyle_555555">
+        <item name="android:fontFamily">@font/sf_pro_display_regular</item>
+        <item name="android:textColor">@color/_555555</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
+    </style>
+
+    <style name="TextViewStyle_61b15a">
+        <item name="android:fontFamily">@font/sf_pro_display_regular</item>
+        <item name="android:textColor">@color/_61b15a</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
+    </style>
+
+    <style name="TextViewStyle2">
+        <item name="android:fontFamily">@font/sf_pro_display_light_italic</item>
+        <item name="android:textColor">@color/_AAAAAA</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
+    </style>
+
+    <style name="TextViewStyle_AAAAAA">
+        <item name="android:fontFamily">@font/sf_pro_display_semibold</item>
+        <item name="android:textColor">@color/_AAAAAA</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
+    </style>
+
+    <style name="OTPEditTextStyle">
+        <item name="android:fontFamily">@font/sf_pro_display_heavy</item>
+        <item name="android:textColor">@color/_555555</item>
+        <item name="android:textSize">@dimen/_30ssp</item>
+    </style>
+
+    <style name="TextViewPriceStyle">
+        <item name="android:fontFamily">@font/sf_pro_display_bold</item>
+        <item name="android:textColor">@color/_61b15a</item>
+        <item name="android:textSize">@dimen/_17ssp</item>
+    </style>
+
+    <style name="TextViewToolbar">
+        <item name="android:fontFamily">@font/sf_pro_display_medium</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/_15ssp</item>
+    </style>
+
+    <style name="TextViewToolbar1">
+        <item name="android:fontFamily">@font/sf_pro_display_medium</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
+    </style>
+
+    <style name="BottomNavigationViewTextStyle">
+        <item name="android:fontFamily">@font/sf_pro_display_regular</item>
+    </style>
+
+    <style name="TabTextAppearanceStyle" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@font/sf_pro_display_semibold</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
+    </style>
+
+    <style name="RadioButtonStyle">
+        <item name="android:fontFamily">@font/sf_pro_display_medium</item>
+        <item name="android:textColor">@color/_555555</item>
+        <item name="android:textSize">@dimen/_14ssp</item>
+        <item name="colorControlNormal">@color/_555555</item>
+        <item name="colorControlActivated">@color/_61b15a</item>
+    </style>
+</resources>
