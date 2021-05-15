@@ -17,7 +17,7 @@ import com.login.utils.Constants
 
 class UserViewModel(application: Application) : AndroidViewModel(application) {
 
-    private val repo: UserRepository = UserRepository(
+    val repo: UserRepository = UserRepository(
         getApplication<LoginDemo>().getAPIService(),
         getApplication<LoginDemo>().getRetrofit()
     )
